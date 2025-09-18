@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avenue Bistro - Cozinha Contemporânea</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <style>
+    body {
+      background-color: #f7e9c1;
+    }
+    .navbar-brand {
+      font-family: "Libertinus Serif Display", system-ui;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .navbar-avenue {
+      background-color: #4e0606;
+    }
+    .navbar-avenue .navbar-brand,
+    .navbar-avenue .nav-link {
+      color: #fff;
+    }
+    .navbar-avenue .nav-link:hover,
+    .navbar-avenue .nav-link.active {
+      color: #f7e9c1;
+    }
+    #reservas {
+      background-color: #5c0000;
+      color: #f7e9c1;
+    }
+    #pratos {
+      color: #700707;
+    }
+    .btn-reservar {
+      --bs-btn-color: #fff;
+      --bs-btn-bg: #a37b4b;
+      --bs-btn-border-color: #a37b4b;
+      --bs-btn-hover-color: #fff;
+      --bs-btn-hover-bg: #8a663b;
+      --bs-btn-hover-border-color: #8a663b;
+      --bs-btn-focus-shadow-rgb: 163,123,75;
+      --bs-btn-active-bg: #8a663b;
+      --bs-btn-active-border-color: #8a663b;
+    }
+    .sobre-nos {
+      color: #700707;
+    }
+    .sobre-nos-text {
+      color: #490808 !important;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .card.custom-card-bg {
+      background-color: #fff3e0;
+      color: #700707;
+      border: none;
+    }
+    footer {
+      background-color: #290404;
+      padding: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-avenue">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#sobre">
+                  <i class="bi bi-shop"></i> Sobre Nós
+                </a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#pratos">
+                  <i class="bi bi-egg-fried"></i> Pratos em Destaque
+                </a>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#equipe">
+                  <i class="bi bi-people"></i> Nossa Equipe
+                </a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#depoimentos">
+                  <i class="bi bi-person"></i> Depoimentos
+                </a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#reservas">
+                  <i class="bi bi-calendar"></i> Reservas
+                </a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#contato">
+                  <i class="bi bi-telephone"></i> Contato
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="AVENUE.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="AVENUE (1).png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="AVENUE (2).png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <section id="sobre" class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6 order-md-2">
+          <img src="FACHADA.png" class="img-fluid rounded shadow" alt="SOBRE NÓS">
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h3 class="fw-bold mt-2 sobre-nos">SOBRE NÓS</h3>
+          <p class="text-secondary sobre-nos-text separador">
+            Começou como um clube do jantar no pequeno apartamento. 
+            Ela cozinhava com calma, luz baixa e guardanapos de linho;logo chegavam com duas ou três garrafas 
+            escolhidas a dedo. Os amigos traziam histórias, e a mesa—sempre curta—virou o lugar preferido de todos. 
+            Sem pressa, sem ostentação: só ingredientes da estação, música suave e conversa longa.
+          </p>
+          <p class="text-secondary sobre-nos-text separador">
+            Quando os pedidos para “mais um jantar” ficaram maiores que a sala, 
+            eles encontraram um salão numa avenida tranquila. Mantiveram poucas mesas, a penumbra 
+            que abraça, e um serviço atento como no começo. A cozinha continuou autoral, guiada pelo que chega fresco dos produtores; 
+            a carta de vinhos, pequena e precisa, foi montada prato a prato. Deram ao lugar o nome de Avenue—homenagem ao caminho 
+            que sempre faziam de volta para casa. O que era encontro de amigos virou restaurante, mas o espírito continua o mesmo: 
+            exclusivo no ritmo, acolhedor na experiência.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pratos" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <small class="text-uppercase fw-semibold" style="color:var(--brand)">DESTAQUES</small>
+        <h2 class="fw-bold mt-2">PRINCIPAIS PRATOS</h2>
+        <hr class="brand-hr">
+      </div>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <figure class="figure">
+          <img src="SALMAO COM COSTRA DE GERGILIM.png" class="figure-img img-fluid rounded" alt="SALMAO" width="400">
+          <figcaption class="figure-caption">
+            <strong>Salmão em Crosta de Gergelim</strong>
+            <br>INGREDIENTES: salmão em crosta de gergelim
+            <br>(salmão, vinho branco gergelim, azeite de oliva,
+            <br>páprica doce, páprica picante, sal e pimenta do reino),
+            <br>espaguete de legumes (abobrinha, cenoura, chuchu, cebola,
+            <br>azeite de oliva, alho, sal e pimenta do reino)
+            <br>e molho pesto (azeite de oliva, manjericão, queijo parmesão,
+            <br> nozes, alho, sal e pimenta do reino).
+          </figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="MEDALHÃO.png" class="figure-img img-fluid rounded" alt="MEDALHÃO" width="400">
+          <figcaption class="figure-caption">
+            <strong>Medalhões de Filé Mignon envolvido<br>no Bacon com Risoto de Açafrão</strong>
+            <br>INGREDIENTES: filé mignon suíno em medalhão Seara, azeite, 
+            <br>cebola picada, arroz arbóreo, vinho branco, açafrão da terra,
+            <br>caldo de legumes, bacon manta Seara, sal e pimenta-do-reino.
+          </figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="PAVLOVA.png" class="figure-img img-fluid rounded" alt="PAVLOVA" width="400">
+          <figcaption class="figure-caption">
+            <strong>Pavlova mit gemischten Beeren</strong>
+            <br>framboesas frescas, framboesas congeladas, açúcar, suco de limão, 
+            <br>amido de milho, claras de ovo, creme de leite fresco, açúcar de confeiteiro,
+            <br>essência de baunilha, morangos frescos, mirtilos frescos, hortelã fresca.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="equipe" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold mt-2">NOSSA EQUIPE</h2>
+        <hr class="brand-hr">
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-3 mb-4">
+          <div class="card custom-card-bg" style="width: 18rem;">
+            <img src="KAUAN.png" class="card-img-top" alt="Kauan Ferrari Marques">
+            <div class="card-body">
+              <p class="card-text">
+                <strong>Kauan Ferrari Marques</strong>
+                <br>Proprietário
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card custom-card-bg" style="width: 18rem;">
+            <img src="CAMILA.png" class="card-img-top" alt="Camila Correia">
+            <div class="card-body">
+              <p class="card-text">
+                <strong>Camila Correia</strong>
+                <br>Gerente
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card custom-card-bg" style="width: 18rem;">
+            <img src="MAJU.png" class="card-img-top" alt="Maria Julia Inácio">
+            <div class="card-body">
+              <p class="card-text">
+                <strong>Maria Julia Inácio</strong>
+                <br>Cozinheira especializada em pratos executivos
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card custom-card-bg" style="width: 18rem;">
+            <img src="ISA.png" class="card-img-top" alt="Isabelly Macedo">
+            <div class="card-body">
+              <p class="card-text">
+                <strong>Isabelly Macedo</strong>
+                <br>Cozinheira especializada em sobremesas
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <small class="text-uppercase fw-semibold" style="color:#700707;">Opiniões</small>
+        <h2 class="fw-bold mt-2">Depoimentos</h2>
+        <hr class="mx-auto" style="width:72px;height:3px;background:#700707;opacity:1;border:0;">
+      </div>
+      <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <figure class="text-center mx-auto" style="max-width:720px;">
+              <div class="mb-2" aria-label="5 estrelas"><span class="text-warning">★★★★★</span></div>
+              <blockquote class="blockquote">
+                <p class="mb-2">“Experiência intimista e impecável. Serviço atencioso e uma carta de vinhos precisa.”</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                Eloisa Maria • <cite>Curitiba</cite>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="carousel-item">
+            <figure class="text-center mx-auto" style="max-width:720px;">
+              <div class="mb-2" aria-label="5 estrelas"><span class="text-warning">★★★★★</span></div>
+              <blockquote class="blockquote">
+                <p class="mb-2">“Cozinha de autor com sabores da estação. Poucas mesas e muito cuidado em cada detalhe.”</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                Mikaella Borges • <cite>São Paulo</cite>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="carousel-item">
+            <figure class="text-center mx-auto" style="max-width:720px;">
+              <div class="mb-2" aria-label="5 estrelas"><span class="text-warning">★★★★★</span></div>
+              <blockquote class="blockquote">
+                <p class="mb-2">“Ambiente elegante sem ostentação. Melhor experiência gastronômica que tive na cidade.”</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                Mateus Cavalcante • <cite>Florianópolis</cite>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="reservas" class="py-5 bg-cream">
+    <div class="container">
+      <div class="text-center mb-4">
+        <small class="text-uppercase fw-semibold" style="color:var(--brand)">Agende</small>
+        <h2 class="fw-bold mt-2">Faça sua Reserva</h2>
+        <hr class="brand-hr">
+      </div>
+      <form class="row g-3 col-lg-8 mx-auto">
+        <div class="col-md-6">
+          <label class="form-label">Nome</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Telefone</label>
+          <input type="tel" class="form-control" required>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Data</label>
+          <input type="date" class="form-control" required>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Horário</label>
+          <input type="time" class="form-control" required>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Pessoas</label>
+          <select class="form-select">
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5+</option>
+          </select>
+        </div>
+        <div class="col-12 text-center">
+          <button type="button" class="btn btn-reservar" data-bs-toggle="modal" data-bs-target="#reserveModal">
+            Reservar
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div class="modal fade" id="reserveModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" data-bs-theme="dark">
+        <div class="modal-header">
+          <h5 class="modal-title">Reserva enviada</h5>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          Obrigado! Entraremos em contato para confirmar sua reserva.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-reservar" data-bs-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<section id="contato">
+  <footer class="text-center text-white py-5">
+    <div class="container">
+      <div class="mb-4">
+        <a href="#" class="text-white me-4" title="Instagram"><i class="bi bi-instagram fs-3"></i></a>
+        <a href="#" class="text-white me-4" title="Facebook"><i class="bi bi-facebook fs-3"></i></a>
+        <a href="#" class="text-white me-4" title="Whatsapp"><i class="bi bi-whatsapp fs-3"></i></a>
+        <a href="#" class="text-white" title="Tripadvisor"><i class="bi bi-tripadvisor fs-3"></i></a>
+      </div>
+      <div>
+        <small class="fs-5">&copy; 2025 Avenue Bistro. Todos os direitos reservados.</small>
+      </div>
+    </div>
+  </footer></section>
+</body>
+</html>
