@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Funcionários - VoluntAfrica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        html, body { height: 100%; margin: 0; }
+        body {
+            background: linear-gradient(180deg, #ffdca8, #fff6ea);
+            min-height: 100vh;
+            color: #5a3a20;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+        nav.navbar { background-color: rgba(153,82,1,0.85); }
+        .navbar .navbar-brand { color: #bbb79e !important; }
+        .navbar .navbar-brand:hover { color: #fff !important; }
+
+        .hero { min-height: calc(100vh - 56px); display: flex; align-items: flex-start; justify-content: center; padding: 2.5rem 1rem; box-sizing: border-box; }
+        .form-content { width: 100%; max-width: 1100px; background: rgba(255,255,255,0.04); padding: 1.25rem; border-radius: 12px; color: #5a3a20; box-shadow: 0 8px 30px rgba(0,0,0,0.12); backdrop-filter: blur(4px); }
+        .form-content h1 { font-size: 1.25rem; margin-bottom: 1rem; color: #ad816c; }
+        .table-responsive { max-height: 60vh; overflow: auto; }
+        .btn-sm { font-size: 0.8rem; }
+
+        .btn-new {
+          background-color: rgb(128,68,0);
+          border-color: rgb(128,68,0);
+          color: #fff;
+        }
+        .btn-new:hover, .btn-new:focus {
+          background-color: rgb(110,58,0);
+          border-color: rgb(110,58,0);
+          box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+          color: #fff;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">VoluntAfrica</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="Principal.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="cadastrar funcionário.html">Funcionários</a></li>
+        <li class="nav-item"><a class="nav-link" href="cadastrar voluntário.html">Voluntários</a></li>
+        <li class="nav-item"><a class="nav-link" href="cadastrar cidade.html">Cidades</a></li>
+      </ul>
+      <div class="d-flex align-items-center">
+        <a class="btn btn-outline-light btn-sm" href="login.html">Sair</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="form-content">
+    <h1>Listagem de Funcionários</h1>
+    <div class="mb-3 d-flex justify-content-between">
+      <div>
+        <a href="cadastrar funcionário.html" class="btn btn-new btn-sm">Novo Funcionário</a>
+      </div>
+      <div class="w-50">
+        <input type="search" class="form-control form-control-sm" placeholder="Buscar por nome, cargo ou email">
+      </div>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-hover align-middle">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Cargo</th>
+            <th>Telefone</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Ana Beatriz Silva</td>
+            <td>ana.silva@voluntafrica.org</td>
+            <td>Coordenadora</td>
+            <td>(11) 91234-5678</td>
+            <td>
+              <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+              <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Lucas Pereira</td>
+            <td>lucas.pereira@voluntafrica.org</td>
+            <td>Gerente</td>
+            <td>(21) 99876-5432</td>
+            <td>
+              <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+              <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Mariana Costa</td>
+            <td>mariana.costa@voluntafrica.org</td>
+            <td>Administrativa</td>
+            <td>(31) 98765-4321</td>
+            <td>
+              <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+              <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Rafael Gomes</td>
+            <td>rafael.gomes@voluntafrica.org</td>
+            <td>Financeiro</td>
+            <td>(41) 91222-3333</td>
+            <td>
+              <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+              <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Fernanda Rocha</td>
+            <td>fernanda.rocha@voluntafrica.org</td>
+            <td>RH</td>
+            <td>(51) 91333-4444</td>
+            <td>
+              <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+              <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Gustavo Lima</td>
+            <td>gustavo.lima@voluntafrica.org</td>
+            <td>Comunicação</td>
+            <td>(61) 91444-5555</td>
+            <td>
+              <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+              <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Patrícia Alves</td>
+            <td>patricia.alves@voluntafrica.org</td>
+            <td>Projeto Educacional</td>
+            <td>(71) 91555-6666</td>
+            <td>
+              <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+              <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Bruno Santos</td>
+            <td>bruno.santos@voluntafrica.org</td>
+            <td>Técnico de Campo</td>
+            <td>(81) 91666-7777</td>
+            <td>
+              <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+              <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Carla Nunes</td>
+            <td>carla.nunes@voluntafrica.org</td>
+            <td>Supervisora</td>
+            <td>(91) 91777-8888</td>
+            <td>
+              <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+              <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Diego Fernandes</td>
+            <td>diego.fernandes@voluntafrica.org</td>
+            <td>Logística</td>
+            <td>(11) 91888-9999</td>
+            <td>
+              <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+              <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Elisa Matos</td>
+            <td>elisa.matos@voluntafrica.org</td>
+            <td>Voluntariado</td>
+            <td>(21) 91999-0000</td>
+            <td>
+              <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+              <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Fábio Rocha</td>
+            <td>fabio.rocha@voluntafrica.org</td>
+            <td>TI</td>
+            <td>(31) 91000-1111</td>
+            <td>
+              <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+              <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Gabriela Pinto</td>
+            <td>gabriela.pinto@voluntafrica.org</td>
+            <td>Parceiras</td>
+            <td>(41) 91211-2222</td>
+            <td>
+              <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+              <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Henrique Barros</td>
+            <td>henrique.barros@voluntafrica.org</td>
+            <td>Pesquisa</td>
+            <td>(51) 91322-3333</td>
+            <td>
+                <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+                <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Inês Carvalho</td>
+            <td>ines.carvalho@voluntafrica.org</td>
+            <td>Administração</td>
+            <td>(61) 91433-4444</td>
+            <td>
+                <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+                <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>João Viana</td>
+            <td>joao.viana@voluntafrica.org</td>
+            <td>Operações</td>
+            <td>(71) 91544-5555</td>
+            <td>
+                <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+                <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Karina Lopes</td>
+            <td>karina.lopes@voluntafrica.org</td>
+            <td>Captação</td>
+            <td>(81) 91655-6666</td>
+            <td>
+              <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+              <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Leandro Souza</td>
+            <td>leandro.souza@voluntafrica.org</td>
+            <td>Voluntariado</td>
+            <td>(91) 91766-7777</td>
+            <td>
+              <a class="btn btn-outline-primary btn-sm" href="#">Editar</a>
+              <a class="btn btn-outline-danger btn-sm" href="#">Excluir</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

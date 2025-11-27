@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - VoluntAfrica</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="imagens/logo.png">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      background-image: url('imagem login.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      min-height: 100vh;
+      background-color: rgb(190,136,74);
+    }
+
+    nav.navbar {
+      background-color: rgba(153,82,1,0.85);
+      color: #99847a;
+    }
+
+    .navbar .navbar-brand { color: #bbb79e !important; }
+    .navbar .navbar-brand:hover { color: #fff !important; }
+
+    .hero {
+      min-height: calc(100vh - 56px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    .form-content {
+      width: 100%;
+      max-width: 420px;
+      background: rgba(255,255,255,0.06);
+      padding: 2rem;
+      border-radius: 12px;
+      color: #d2d4b4;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.45);
+      backdrop-filter: blur(4px);
+    }
+
+    .form-content h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #d2d4b4;
+    }
+
+    .form-control::placeholder { color: wheat; opacity: 0.95; }
+    .form-control { background: transparent; border: 1px solid rgba(255,255,255,0.08); color: #bbb79e; }
+
+    .btn-primary {
+      background-color: rgb(153,82,1);
+      border-color: rgb(153,82,1);
+    }
+
+    @media (max-width: 576px) {
+      .form-content { padding: 1.25rem; max-width: 95%; }
+      .hero { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">VoluntAfrica</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link login-text" href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="form-content">
+      <h1>Entrar</h1>
+      <form action="Principal.html" method="get">
+        <div class="mb-3">
+          <label class="form-label visually-hidden">Email</label>
+          <input type="email" class="form-control" placeholder="seu@email.com" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label visually-hidden">Senha</label>
+          <input type="password" class="form-control" placeholder="Senha" required>
+        </div>
+        <div class="d-grid">
+          <button class="btn btn-primary" type="submit">Entrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
